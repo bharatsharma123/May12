@@ -2,6 +2,7 @@ package testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,6 +18,11 @@ public class TC_001 {
 		driver=new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		}
+	@AfterTest
+	public void last()
+	{
+		driver.close();
+	}
 	
 	
 	
