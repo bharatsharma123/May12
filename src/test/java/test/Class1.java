@@ -2,6 +2,10 @@ package test;
 
 public class Class1 {
 
-  System.out.println("Hello world");
+	public void meth()
+	{
+		System.out.println("Hello world");
+	}
+  
 
 }
